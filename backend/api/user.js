@@ -7,6 +7,7 @@ router.get("/", (req, res) => {
     .then((users) => res.json(users))
     .catch((err) => console.log(err));
 });
+//
 
 router.post("/", (req, res) => {
   const { name, email } = req.body;
